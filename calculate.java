@@ -31,6 +31,12 @@ public class calculate {
         }
     }
     public static void main (String args[]) {
+        new ImageInfo("uri", 37.488767, 127.065692);
+        for (double x = 0, y = 0; x < 1;) {
+            if (getDistance(37.488767 - x, 37.488201, 127.065692 - y, 127.065573) > 60) System.out.println(x);
+            y += 0.000001;
+            x += 0.000001;
+        }
         System.out.println(getDistance(37.488767, 37.488201, 127.065692, 127.065573));
         
     }
